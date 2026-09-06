@@ -34,11 +34,12 @@ consentForm.addEventListener('submit', function(e){
         }, 1500)
 
         setTimeout(function(){
-            document.getElementById("modal-inner").innerHTML= `<h2>Thanks <span class="modal-display-name">${fullName}</span>, you sucker! </h2>
-                                    <p>We just sold the rights to your eternal soul.</p>
-                                    <div class="idiot-gif">
-                                        <img src="images/pirate.gif">
-                                    </div>
-    ` 
+            document.getElementById("modal-inner").innerHTML= ` <h2>Thanks <span class="modal-display-name">${fullName}</span>, you sucker! </h2>
+                                                                <p>We just sold the rights to your eternal soul.</p>
+                                                                <div class="idiot-gif">
+                                                                    <img src="images/pirate.gif">
+                                                                </div>
+                                                                ` 
+            modalCloseBtn.disabled = false
         }, 3000)
 })
